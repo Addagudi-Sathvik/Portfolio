@@ -1,3 +1,4 @@
+import React from "react";
 import photo from '../assets/photo.png';
 
 export default function PortfolioContent() {
