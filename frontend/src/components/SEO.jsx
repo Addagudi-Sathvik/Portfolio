@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 const SEO = ({
   title = "Addagudi Sathvik | Full-Stack Developer · Hyderabad",
-  description = "Hi, I'm Addagudi Sathvik — a Full-Stack Developer and B.E. IT student at CBIT Hyderabad. I build fast, modern web apps using React, Node.js, MongoDB and Python. Check out my live projects and let's connect.",
+  description = "Hi, I'm Addagudi Sathvik, a Full-Stack Developer and B.E. Information Technology student at CBIT Hyderabad. I build fast, modern, scalable web applications using React, Node.js, MongoDB, Python, and the MERN stack. Explore my projects, technical skills, and experience.",
   url = "https://portfolio-brown-nine-70.vercel.app",
   image = "https://portfolio-brown-nine-70.vercel.app/og-image.png",
   keywords = "Addagudi Sathvik, Sathvik developer, full stack developer Hyderabad, React developer, MERN stack, CBIT developer, Node.js developer, portfolio, web development India",
