@@ -1,5 +1,6 @@
 import React from "react";
 import photo from '../assets/photo.png';
+import Projects from "./Projects";
 
 export default function PortfolioContent() {
   const handleSendMessage = () => {
@@ -178,96 +179,174 @@ export default function PortfolioContent() {
           <div className="section-line"></div>
           <h2 className="section-title">Projects</h2>
         </div>
+
         <div className="projects-list">
-      
-          {/* Project 01 — Civic Issue Reporting System (LIVE) */}
-          <a className="project-item reveal" href="https://civic-issue-reporting-system-six.vercel.app/" target="_blank" rel="noopener">
+
+          {/* Project 1 */}
+          <a
+            className="project-item reveal"
+            href="https://civic-issue-reporting-system-six.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="/projects/project1.png"
+              className="project-preview"
+              alt="Civic Issue Reporting System"
+            />
+
             <div className="project-num">01</div>
+
             <div className="project-info">
-              <div className="project-title">Civic Issue Reporting System</div>
-              <p className="project-desc">A full-stack platform enabling citizens to report civic issues — potholes, garbage, streetlights, water leaks — with photos, GPS location, and descriptions. Features a real-time issue map view, admin dashboard, and status tracking for faster resolution.</p>
+              <div className="project-title">
+                Civic Issue Reporting System
+              </div>
+
+              <p className="project-desc">
+                A full-stack platform enabling citizens to report civic issues with
+                GPS location, images, and real-time tracking.
+              </p>
+
               <div className="project-tags">
                 <span className="project-tag">React</span>
-                <span className="project-tag">Node.js / Express</span>
+                <span className="project-tag">Node.js</span>
                 <span className="project-tag">MongoDB</span>
-                <span className="project-tag">Google Maps API</span>
                 <span className="project-tag-live">● Live</span>
               </div>
             </div>
+
             <div className="project-arrow">↗</div>
           </a>
-      
-          {/* Project 02 — Expense Tracker (Live) */}
+
+          {/* Project 2 */}
           <a
             className="project-item reveal reveal-delay-1"
             href="https://khatatrack.vercel.app/"
             target="_blank"
             rel="noopener"
           >
+            <img
+              src="/projects/project2.png"
+              className="project-preview"
+              alt="KhataTrack"
+            />
+
             <div className="project-num">02</div>
 
             <div className="project-info">
               <div className="project-title">
-                Real-Time Expense Tracker & Budget Planner
+                KhataTrack
               </div>
 
               <p className="project-desc">
-                A full-stack personal finance application designed for tracking daily
-                expenses, managing monthly budgets, categorizing transactions, and
-                visualizing spending patterns through interactive dashboards. Includes
-                secure JWT authentication, automated monthly reports, budget alerts,
-                and a responsive modern UI for better financial management.
+                Expense tracker and budget planner with analytics dashboard and secure authentication.
               </p>
 
               <div className="project-tags">
                 <span className="project-tag">React</span>
                 <span className="project-tag">Chart.js</span>
-                <span className="project-tag">Node.js</span>
                 <span className="project-tag">MongoDB</span>
-                <span className="project-tag">JWT</span>
                 <span className="project-tag-live">● Live</span>
               </div>
             </div>
 
             <div className="project-arrow">↗</div>
           </a>
-      
-          {/* Project 03 — Event Management System (LIVE) */}
-          <a className="project-item reveal reveal-delay-2" href="https://event-management-system-ivory-ten.vercel.app/" target="_blank" rel="noopener">
+
+          {/* Project 3 */}
+          <a
+            className="project-item reveal reveal-delay-2"
+            href="https://event-management-system-ivory-ten.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="/projects/project3.png"
+              className="project-preview"
+              alt="Event Management System"
+            />
+
             <div className="project-num">03</div>
+
             <div className="project-info">
-              <div className="project-title">Event Management System</div>
-              <p className="project-desc">A full-stack college event platform for booking, registering, and verifying events via QR code scanning. Attendees register online and receive a unique QR code; organisers scan codes at entry for instant verification — eliminating manual check-ins and reducing queues at college fests.</p>
+              <div className="project-title">
+                Event Management System
+              </div>
+
+              <p className="project-desc">
+                QR-based college event registration and management system.
+              </p>
+
               <div className="project-tags">
                 <span className="project-tag">React</span>
-                <span className="project-tag">Node.js / Express</span>
+                <span className="project-tag">Express</span>
                 <span className="project-tag">MongoDB</span>
-                <span className="project-tag">QR Code API</span>
-                <span className="project-tag">JWT</span>
                 <span className="project-tag-live">● Live</span>
               </div>
             </div>
+
             <div className="project-arrow">↗</div>
           </a>
-      
-          {/* Project 04 — Smart Canteen (no live link) */}
+
+          {/* Project 04 */}
           <div className="project-item reveal reveal-delay-3">
-            <div className="project-num">04</div>
-            <div className="project-info">
-              <div className="project-title">Smart Canteen — College Food Booking System</div>
-              <p className="project-desc">A college welfare e-commerce platform that lets students pre-order canteen meals online, choose pick-up slots, and pay digitally — drastically cutting physical queues and wait times. Features a real-time order dashboard for canteen staff, menu management, and order history for students.</p>
-              <div className="project-tags">
-                <span className="project-tag">MERN Stack</span>
-                <span className="project-tag">Razorpay / UPI</span>
-                <span className="project-tag">React</span>
-                <span className="project-tag">Node.js</span>
-                <span className="project-tag">MongoDB</span>
-                <span className="project-tag">Tailwind</span>
-              </div>
-            </div>
-            <div className="project-arrow-soon">Soon</div>
+
+          <img
+          src="/projects/project4.png"
+          className="project-preview"
+          alt="Smart Canteen System"
+          />
+
+          <div className="project-info">
+
+          <div className="project-title">
+          Smart Canteen — College Food Booking System
           </div>
-      
+
+          <p className="project-desc">
+          A college welfare e-commerce platform allowing students to pre-order meals, choose pickup slots, and make digital payments. Includes menu management, order history, and a real-time dashboard for canteen staff.
+          </p>
+
+          <div className="project-tags">
+
+          <span className="project-tag">
+          MERN Stack
+          </span>
+
+          <span className="project-tag">
+          React
+          </span>
+
+          <span className="project-tag">
+          Node.js
+          </span>
+
+          <span className="project-tag">
+          MongoDB
+          </span>
+
+          <span className="project-tag">
+          Razorpay
+          </span>
+
+          <span className="project-tag">
+          Tailwind
+          </span>
+
+          <span className="project-tag-live">
+          ● Coming Soon
+          </span>
+
+          </div>
+
+          </div>
+
+          <div className="project-arrow-soon">
+          Soon
+          </div>
+
+          </div>
+
         </div>
       </section>
       
