@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 import photo from '../assets/photo.png';
 import Projects from "./Projects";
 
 export default function PortfolioContent() {
-  const handleSendMessage = () => {
-    alert('Message sent! (Connect your backend to make this live)');
+  const form = useRef();
+  const [formState, setFormState] = useState('idle'); // 'idle' | 'sending' | 'sent' | 'error'
+
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+    setFormState('sending');
+
+    emailjs.sendForm(
+      'service_jfnycdi',
+      'template_fcltdwu',
+      form.current,
+      'UL2BYeZcpNqg5jAUH'
+    )
+    .then(() => {
+      setFormState('sent');
+      form.current.reset();
+    })
+    .catch((error) => {
+      setFormState('error');
+      console.error(error);
+    });
   };
 
   return (
@@ -194,19 +214,13 @@ export default function PortfolioContent() {
               className="project-preview"
               alt="Civic Issue Reporting System"
             />
-
             <div className="project-num">01</div>
-
             <div className="project-info">
-              <div className="project-title">
-                Civic Issue Reporting System
-              </div>
-
+              <div className="project-title">Civic Issue Reporting System</div>
               <p className="project-desc">
                 A full-stack platform enabling citizens to report civic issues with
                 GPS location, images, and real-time tracking.
               </p>
-
               <div className="project-tags">
                 <span className="project-tag">React</span>
                 <span className="project-tag">Node.js</span>
@@ -214,7 +228,6 @@ export default function PortfolioContent() {
                 <span className="project-tag-live">● Live</span>
               </div>
             </div>
-
             <div className="project-arrow">↗</div>
           </a>
 
@@ -230,18 +243,12 @@ export default function PortfolioContent() {
               className="project-preview"
               alt="KhataTrack"
             />
-
             <div className="project-num">02</div>
-
             <div className="project-info">
-              <div className="project-title">
-                KhataTrack
-              </div>
-
+              <div className="project-title">KhataTrack</div>
               <p className="project-desc">
                 Expense tracker and budget planner with analytics dashboard and secure authentication.
               </p>
-
               <div className="project-tags">
                 <span className="project-tag">React</span>
                 <span className="project-tag">Chart.js</span>
@@ -249,7 +256,6 @@ export default function PortfolioContent() {
                 <span className="project-tag-live">● Live</span>
               </div>
             </div>
-
             <div className="project-arrow">↗</div>
           </a>
 
@@ -265,18 +271,12 @@ export default function PortfolioContent() {
               className="project-preview"
               alt="Event Management System"
             />
-
             <div className="project-num">03</div>
-
             <div className="project-info">
-              <div className="project-title">
-                Event Management System
-              </div>
-
+              <div className="project-title">Event Management System</div>
               <p className="project-desc">
                 QR-based college event registration and management system.
               </p>
-
               <div className="project-tags">
                 <span className="project-tag">React</span>
                 <span className="project-tag">Express</span>
@@ -284,67 +284,32 @@ export default function PortfolioContent() {
                 <span className="project-tag-live">● Live</span>
               </div>
             </div>
-
             <div className="project-arrow">↗</div>
           </a>
 
-          {/* Project 04 */}
+          {/* Project 4 */}
           <div className="project-item reveal reveal-delay-3">
-
-          <img
-          src="/projects/project4.png"
-          className="project-preview"
-          alt="Smart Canteen System"
-          />
-
-          <div className="project-info">
-
-          <div className="project-title">
-          Smart Canteen — College Food Booking System
-          </div>
-
-          <p className="project-desc">
-          A college welfare e-commerce platform allowing students to pre-order meals, choose pickup slots, and make digital payments. Includes menu management, order history, and a real-time dashboard for canteen staff.
-          </p>
-
-          <div className="project-tags">
-
-          <span className="project-tag">
-          MERN Stack
-          </span>
-
-          <span className="project-tag">
-          React
-          </span>
-
-          <span className="project-tag">
-          Node.js
-          </span>
-
-          <span className="project-tag">
-          MongoDB
-          </span>
-
-          <span className="project-tag">
-          Razorpay
-          </span>
-
-          <span className="project-tag">
-          Tailwind
-          </span>
-
-          <span className="project-tag-live">
-          ● Coming Soon
-          </span>
-
-          </div>
-
-          </div>
-
-          <div className="project-arrow-soon">
-          Soon
-          </div>
-
+            <img
+              src="/projects/project4.png"
+              className="project-preview"
+              alt="Smart Canteen System"
+            />
+            <div className="project-info">
+              <div className="project-title">Smart Canteen — College Food Booking System</div>
+              <p className="project-desc">
+                A college welfare e-commerce platform allowing students to pre-order meals, choose pickup slots, and make digital payments. Includes menu management, order history, and a real-time dashboard for canteen staff.
+              </p>
+              <div className="project-tags">
+                <span className="project-tag">MERN Stack</span>
+                <span className="project-tag">React</span>
+                <span className="project-tag">Node.js</span>
+                <span className="project-tag">MongoDB</span>
+                <span className="project-tag">Razorpay</span>
+                <span className="project-tag">Tailwind</span>
+                <span className="project-tag-live">● Coming Soon</span>
+              </div>
+            </div>
+            <div className="project-arrow-soon">Soon</div>
           </div>
 
         </div>
@@ -628,23 +593,125 @@ export default function PortfolioContent() {
               </a>
             </div>
           </div>
+
+          {/* ── CONTACT FORM WITH EMAILJS ── */}
           <div className="reveal reveal-delay-2">
-            <div className="form-group">
-              <label>Your Name</label>
-              <input type="text" placeholder="John Doe"/>
-            </div>
-            <div className="form-group">
-              <label>Email Address</label>
-              <input type="email" placeholder="john@example.com"/>
-            </div>
-            <div className="form-group">
-              <label>Message</label>
-              <textarea placeholder="Tell me about your project..."></textarea>
-            </div>
-            <button className="btn-send" onClick={handleSendMessage}>
-              Send Message <span className="btn-arrow">→</span>
-            </button>
+
+            {formState === 'sent' ? (
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                justifyContent: 'center',
+                minHeight: '380px',
+                gap: '20px',
+                padding: '0 0 8px 0',
+              }}>
+                <div style={{
+                  width: '64px',
+                  height: '64px',
+                  borderRadius: '50%',
+                  border: '1.5px solid rgba(255,255,255,0.15)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '26px',
+                  background: 'rgba(255,255,255,0.04)',
+                  marginBottom: '8px',
+                }}>✓</div>
+                <div style={{
+                  fontSize: '1.6rem',
+                  fontWeight: '500',
+                  color: '#fff',
+                  letterSpacing: '-0.02em',
+                  lineHeight: '1.2',
+                }}>Message received.</div>
+                <div style={{
+                  fontSize: '0.95rem',
+                  color: 'rgba(255,255,255,0.45)',
+                  lineHeight: '1.7',
+                  maxWidth: '340px',
+                }}>
+                  Thank you for reaching out. I'll review your message and get back to you within 24 hours.
+                </div>
+                <div style={{
+                  width: '100%',
+                  height: '1px',
+                  background: 'rgba(255,255,255,0.08)',
+                  margin: '8px 0',
+                }}/>
+                <button
+                  onClick={() => setFormState('idle')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: 'rgba(255,255,255,0.35)',
+                    fontSize: '0.85rem',
+                    cursor: 'pointer',
+                    padding: '0',
+                    letterSpacing: '0.04em',
+                    transition: 'color 0.2s',
+                  }}
+                  onMouseEnter={e => e.target.style.color = 'rgba(255,255,255,0.75)'}
+                  onMouseLeave={e => e.target.style.color = 'rgba(255,255,255,0.35)'}
+                >
+                  ← Send another message
+                </button>
+              </div>
+            ) : (
+              <form ref={form} onSubmit={handleSendMessage}>
+                <div className="form-group">
+                  <label>Your Name</label>
+                  <input
+                    type="text"
+                    name="from_name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Email Address</label>
+                  <input
+                    type="email"
+                    name="reply_to"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Message</label>
+                  <textarea
+                    name="message"
+                    placeholder="Tell me about your project..."
+                    required
+                  ></textarea>
+                </div>
+
+                {formState === 'error' && (
+                  <div style={{
+                    fontSize: '0.85rem',
+                    color: 'rgba(255,100,100,0.8)',
+                    marginBottom: '12px',
+                    letterSpacing: '0.02em',
+                  }}>
+                    Something went wrong. Please try again or email me directly.
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  className="btn-send"
+                  disabled={formState === 'sending'}
+                  style={{ opacity: formState === 'sending' ? 0.6 : 1, cursor: formState === 'sending' ? 'not-allowed' : 'pointer' }}
+                >
+                  {formState === 'sending' ? 'Sending...' : 'Send Message'}
+                  {formState !== 'sending' && <span className="btn-arrow">→</span>}
+                </button>
+              </form>
+            )}
+
           </div>
+
         </div>
       </section>
       
