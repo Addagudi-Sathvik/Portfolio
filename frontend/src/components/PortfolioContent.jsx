@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import photo from '../assets/photo.png';
 import Projects from "./Projects";
+import "../Projects.css";
+
 
 export default function PortfolioContent() {
   const form = useRef();
@@ -62,12 +64,12 @@ export default function PortfolioContent() {
       <section id="hero">
         <canvas id="canvas-bg"></canvas>
         <div className="hero-content">
-          <p className="hero-tag">Full Stack Developer · Hyderabad, India</p>
-          <h1 className="hero-name">
-            Addagudi
-            <span>Sathvik</span>
+          <p className="hero-tag">I build full-stack apps that solve real problems.</p>
+          <h1 className="hero-name">            
+            Sathvik
+            <span>Addagudi</span>
           </h1>
-          <p className="hero-role">React · Node.js · MongoDB · Python · ML</p>
+          <p className="hero-role">Full Stack Developer · React · Node.js · MongoDB · Hyderabad</p>
           <div className="hero-cta">
             <a className="hero-resume-btn" href="https://drive.google.com/file/d/15G-UcHY6MHkdOVaNvoFh9xi4SiXRtC_a/view?usp=drivesdk" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '15px', height: '15px' }}>
@@ -85,7 +87,7 @@ export default function PortfolioContent() {
           <div className="photo-frame">
             <img src={photo} alt="Addagudi Sathvik"/>
           </div>
-          <p className="photo-caption">Sathvik · 2024</p>
+          <p className="photo-caption">Sathvik · 2026</p>
         </div>
         <div className="hero-scroll-indicator">
           <span>Scroll</span>
@@ -102,12 +104,16 @@ export default function PortfolioContent() {
         </div>
         <div className="about-grid">
           <div className="about-text reveal">
-            <p>I'm <strong>Addagudi Sathvik</strong>, a Full Stack Developer and B.E. Information Technology student at CBIT Hyderabad, passionate about building modern, scalable, and user-focused web applications. I transform ideas into functional digital experiences by combining clean design with efficient engineering.</p>
-            <p>I work across <strong>Frontend and Backend Technologies</strong> — crafting responsive interfaces and reliable systems with the MERN stack. I'm driven by a strong interest in <strong>problem-solving, real-world software, and continuously raising my craft.</strong></p>
-            <p>I'm also exploring <strong>Machine Learning and Generative AI</strong>, always looking for opportunities to learn, build, and create meaningful solutions that matter.</p>
+            <p><strong>Architecting production-grade web applications where clean, maintainable code meets scalable infrastructure.</strong></p>
+
+            <p>I’m <strong>Addagudi Sathvik</strong>, a Full-Stack Engineer and Information Technology student at CBIT Hyderabad. I approach software development with a product-first mindset, specializing in bridging the gap between robust backend systems and high-fidelity, polished user interfaces.</p>
+
+            <p>I work across frontend and backend technologies to build reliable, production-ready ecosystems using the <strong>MERN stack</strong>. Rather than just writing syntax, I focus on the entire product lifecycle—ensuring every engineering decision optimizes application performance, data integrity, and system scalability.</p>
+
+            <p>I am also integrating data-driven <strong>Machine Learning models and Generative AI workflows</strong>, transitioning traditional web applications into smart, predictive environments. Driven by engineering craftsmanship, I build software engineered to scale.</p>
             <div className="about-stats">
               <div className="stat-item reveal reveal-delay-1">
-                <div className="stat-num">4+</div>
+                <div className="stat-num">7+</div>
                 <div className="stat-label">Projects Shipped</div>
               </div>
               <div className="stat-item reveal reveal-delay-2">
@@ -140,180 +146,446 @@ export default function PortfolioContent() {
           <div className="section-line"></div>
           <h2 className="section-title">Skills</h2>
         </div>
+
         <div className="skills-grid">
+
+          {/* ── Row 1 ── */}
           <div className="skill-card reveal">
-            <span className="skill-icon">⚛️</span>
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                className="skill-devicon"
+              />
+            </div>
             <div className="skill-name">React.js</div>
             <div className="skill-desc">Component-driven UIs, hooks, state management, real-time dashboards</div>
-            <div className="skill-bar-wrap"><div className="skill-bar-track"><div className="skill-bar-fill" data-width="88"></div></div></div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
           </div>
+
           <div className="skill-card reveal reveal-delay-1">
-            <span className="skill-icon">🟢</span>
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+                className="skill-devicon"
+              />
+            </div>
             <div className="skill-name">Node / Express</div>
             <div className="skill-desc">RESTful APIs, JWT Auth, Socket.io, middleware pipelines</div>
-            <div className="skill-bar-wrap"><div className="skill-bar-track"><div className="skill-bar-fill" data-width="85"></div></div></div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
           </div>
+
           <div className="skill-card reveal reveal-delay-2">
-            <span className="skill-icon">🍃</span>
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+                className="skill-devicon"
+              />
+            </div>
             <div className="skill-name">MongoDB</div>
-            <div className="skill-desc">Schema design, Mongoose, CRUD operations, Atlas</div>
-            <div className="skill-bar-wrap"><div className="skill-bar-track"><div className="skill-bar-fill" data-width="83"></div></div></div>
+            <div className="skill-desc">Schema design, Mongoose, CRUD operations, Atlas cloud</div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="83"></div>
+              </div>
+            </div>
           </div>
+
           <div className="skill-card reveal reveal-delay-3">
-            <span className="skill-icon">🔷</span>
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                className="skill-devicon"
+              />
+            </div>
             <div className="skill-name">JavaScript</div>
             <div className="skill-desc">ES6+, async/await, algorithms, data structures</div>
-            <div className="skill-bar-wrap"><div className="skill-bar-track"><div className="skill-bar-fill" data-width="90"></div></div></div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
           </div>
+
+          {/* ── Row 2 ── */}
           <div className="skill-card reveal">
-            <span className="skill-icon">🐍</span>
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+                className="skill-devicon"
+              />
+            </div>
             <div className="skill-name">Python / ML</div>
             <div className="skill-desc">Scikit-learn, TensorFlow, Generative AI, data pipelines</div>
-            <div className="skill-bar-wrap"><div className="skill-bar-track"><div className="skill-bar-fill" data-width="78"></div></div></div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="78"></div>
+              </div>
+            </div>
           </div>
+
           <div className="skill-card reveal reveal-delay-1">
-            <span className="skill-icon">☕</span>
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+                className="skill-devicon"
+              />
+            </div>
             <div className="skill-name">Java / C++</div>
             <div className="skill-desc">OOP principles, DSA, competitive programming foundations</div>
-            <div className="skill-bar-wrap"><div className="skill-bar-track"><div className="skill-bar-fill" data-width="75"></div></div></div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
           </div>
+
           <div className="skill-card reveal reveal-delay-2">
-            <span className="skill-icon">🎨</span>
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind CSS"
+                className="skill-devicon"
+              />
+            </div>
             <div className="skill-name">HTML / CSS / Tailwind</div>
             <div className="skill-desc">Responsive layouts, Bootstrap, TailwindCSS, design systems</div>
-            <div className="skill-bar-wrap"><div className="skill-bar-track"><div className="skill-bar-fill" data-width="92"></div></div></div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="92"></div>
+              </div>
+            </div>
           </div>
+
           <div className="skill-card reveal reveal-delay-3">
-            <span className="skill-icon">🛠️</span>
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+                className="skill-devicon"
+              />
+            </div>
             <div className="skill-name">Tools &amp; DB</div>
             <div className="skill-desc">Git, GitHub, VS Code, SQL, Oracle, Socket.io</div>
-            <div className="skill-bar-wrap"><div className="skill-bar-track"><div className="skill-bar-fill" data-width="82"></div></div></div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="82"></div>
+              </div>
+            </div>
           </div>
+
+          {/* ── Row 3 — New Skills ── */}
+          <div className="skill-card reveal">
+            <div className="skill-icon-wrap skill-icon-wrap--invert">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt="Next.js"
+                className="skill-devicon"
+              />
+            </div>
+            <div className="skill-name">Next.js</div>
+            <div className="skill-desc">SSR, SSG, App Router, API routes, full-stack React applications</div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="72"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="skill-card reveal reveal-delay-1">
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+                className="skill-devicon"
+              />
+            </div>
+            <div className="skill-name">TypeScript</div>
+            <div className="skill-desc">Type safety, interfaces, generics, scalable codebase architecture</div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="74"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="skill-card reveal reveal-delay-2">
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                alt="Docker"
+                className="skill-devicon"
+              />
+            </div>
+            <div className="skill-name">Docker</div>
+            <div className="skill-desc">Containerisation, Docker Compose, environment consistency, deployment</div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="68"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="skill-card reveal reveal-delay-3">
+            <div className="skill-icon-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                alt="Figma"
+                className="skill-devicon"
+              />
+            </div>
+            <div className="skill-name">Figma / UI Design</div>
+            <div className="skill-desc">Wireframing, prototyping, component libraries, design-to-code handoff</div>
+            <div className="skill-bar-wrap">
+              <div className="skill-bar-track">
+                <div className="skill-bar-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
       
-      {/* PROJECTS */}
-      <section id="projects">
-        <div className="section-header reveal">
-          <span className="section-num">03</span>
-          <div className="section-line"></div>
-          <h2 className="section-title">Projects</h2>
-        </div>
+     {/* PROJECTS */}
+    <section id="projects">
+      <div className="section-header reveal">
+        <span className="section-num">03</span>
+        <div className="section-line"></div>
+        <h2 className="section-title">Projects</h2>
+      </div>
 
-        <div className="projects-list">
+      <div className="projects-list">
 
-          {/* Project 1 */}
-          <a
-            className="project-item reveal"
-            href="https://civic-issue-reporting-system-six.vercel.app/"
-            target="_blank"
-            rel="noopener"
-          >
-            <img
-              src="/projects/project1.png"
-              className="project-preview"
-              alt="Civic Issue Reporting System"
-            />
-            <div className="project-num">01</div>
-            <div className="project-info">
-              <div className="project-title">Civic Issue Reporting System</div>
-              <p className="project-desc">
-                A full-stack platform enabling citizens to report civic issues with
-                GPS location, images, and real-time tracking.
-              </p>
-              <div className="project-tags">
-                <span className="project-tag">React</span>
-                <span className="project-tag">Node.js</span>
-                <span className="project-tag">MongoDB</span>
-                <span className="project-tag-live">● Live</span>
-              </div>
+        {/* Project 1 — Civic Issue Reporting System */}
+        <div className="project-item reveal">
+          <img
+            src="/projects/project1.png"
+            className="project-preview"
+            alt="Civic Issue Reporting System"
+          />
+          <div className="project-num">01</div>
+
+          <div className="project-info">
+            <div className="project-title">Civic Issue Reporting System</div>
+
+            <p className="project-desc">
+              A multi-role civic platform with a complete issue lifecycle — citizen
+              reporting, admin verification, department assignment, and proof-based
+              resolution. Features GPS-pinned reports, role-based dashboards, and a
+              gamified points system where users earn rewards per verified report and
+              redeem them for coupons.
+            </p>
+
+            <div className="project-metrics">
+              <span className="project-metric">3-Role System</span>
+              <span className="project-metric">GPS Reporting</span>
+              <span className="project-metric">Gamified Rewards</span>
+              <span className="project-metric">Proof-Verified Pipeline</span>
             </div>
-            <div className="project-arrow">↗</div>
-          </a>
 
-          {/* Project 2 */}
-          <a
-            className="project-item reveal reveal-delay-1"
-            href="https://khatatrack.vercel.app/"
-            target="_blank"
-            rel="noopener"
-          >
-            <img
-              src="/projects/project2.png"
-              className="project-preview"
-              alt="KhataTrack"
-            />
-            <div className="project-num">02</div>
-            <div className="project-info">
-              <div className="project-title">KhataTrack</div>
-              <p className="project-desc">
-                Expense tracker and budget planner with analytics dashboard and secure authentication.
-              </p>
-              <div className="project-tags">
-                <span className="project-tag">React</span>
-                <span className="project-tag">Chart.js</span>
-                <span className="project-tag">MongoDB</span>
-                <span className="project-tag-live">● Live</span>
-              </div>
-            </div>
-            <div className="project-arrow">↗</div>
-          </a>
+            <div className="project-tags">
+              <span className="project-tag">React</span>
+              <span className="project-tag">Node.js</span>
+              <span className="project-tag">MongoDB</span>
+              <span className="project-tag">JWT</span>
+              <span className="project-tag-live">{'\u25CF'} Live</span>
 
-          {/* Project 3 */}
-          <a
-            className="project-item reveal reveal-delay-2"
-            href="https://event-management-system-ivory-ten.vercel.app/"
-            target="_blank"
-            rel="noopener"
-          >
-            <img
-              src="/projects/project3.png"
-              className="project-preview"
-              alt="Event Management System"
-            />
-            <div className="project-num">03</div>
-            <div className="project-info">
-              <div className="project-title">Event Management System</div>
-              <p className="project-desc">
-                QR-based college event registration and management system.
-              </p>
-              <div className="project-tags">
-                <span className="project-tag">React</span>
-                <span className="project-tag">Express</span>
-                <span className="project-tag">MongoDB</span>
-                <span className="project-tag-live">● Live</span>
-              </div>
+              <a
+                className="project-tag-github"
+                href="https://github.com/Addagudi-Sathvik/Civic-Issue-Reporting-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                GitHub
+              </a>
             </div>
-            <div className="project-arrow">↗</div>
-          </a>
-
-          {/* Project 4 */}
-          <div className="project-item reveal reveal-delay-3">
-            <img
-              src="/projects/project4.png"
-              className="project-preview"
-              alt="Smart Canteen System"
-            />
-            <div className="project-info">
-              <div className="project-title">Smart Canteen — College Food Booking System</div>
-              <p className="project-desc">
-                A college welfare e-commerce platform allowing students to pre-order meals, choose pickup slots, and make digital payments. Includes menu management, order history, and a real-time dashboard for canteen staff.
-              </p>
-              <div className="project-tags">
-                <span className="project-tag">MERN Stack</span>
-                <span className="project-tag">React</span>
-                <span className="project-tag">Node.js</span>
-                <span className="project-tag">MongoDB</span>
-                <span className="project-tag">Razorpay</span>
-                <span className="project-tag">Tailwind</span>
-                <span className="project-tag-live">● Coming Soon</span>
-              </div>
-            </div>
-            <div className="project-arrow-soon">Soon</div>
           </div>
 
+          <a
+            className="project-arrow"
+            href="https://civic-issue-reporting-system-six.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {'\u2197'}
+          </a>
         </div>
-      </section>
+
+        {/* Project 2 — KhataTrack */}
+        <div className="project-item reveal reveal-delay-1">
+          <img
+            src="/projects/project2.png"
+            className="project-preview"
+            alt="KhataTrack"
+          />
+
+          <div className="project-num">02</div>
+
+          <div className="project-info">
+            <div className="project-title">KhataTrack</div>
+
+            <p className="project-desc">
+              A personal finance intelligence platform with multi-format expense
+              exports (Excel and PDF), interactive monthly and yearly dashboards,
+              and a real-time income-to-expense ratio engine. Users set savings goals
+              with smart notifications triggered on target deviation — giving full
+              visibility into spending patterns with actionable analytics.
+            </p>
+
+            <div className="project-metrics">
+              <span className="project-metric">Excel / PDF Exports</span>
+              <span className="project-metric">Monthly & Yearly Analytics</span>
+              <span className="project-metric">Goal Notifications</span>
+              <span className="project-metric">Income-Expense Ratio</span>
+            </div>
+
+            <div className="project-tags">
+              <span className="project-tag">React</span>
+              <span className="project-tag">Chart.js</span>
+              <span className="project-tag">MongoDB</span>
+              <span className="project-tag">JWT</span>
+              <span className="project-tag-live">{'\u25CF'} Live</span>
+
+              <a
+                className="project-tag-github"
+                href="https://github.com/Addagudi-Sathvik/KhataTrack"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <a
+            className="project-arrow"
+            href="https://khatatrack.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {'\u2197'}
+          </a>
+        </div>
+
+        {/* Project 3 — Event Management System */}
+        <div className="project-item reveal reveal-delay-2">
+          <img
+            src="/projects/project3.png"
+            className="project-preview"
+            alt="Event Management System"
+          />
+
+          <div className="project-num">03</div>
+
+          <div className="project-info">
+            <div className="project-title">
+              EventFlow — Event Management System
+            </div>
+
+            <p className="project-desc">
+              A 3-panel event ecosystem (Organiser, Admin, User) with a complete
+              hall booking and approval pipeline. Organisers browse and request halls
+              by time slot, admins verify credentials before approval, and users book
+              events with a generated token for dual verification at entry. Includes
+              an AI-powered smart feedback engine and a full organiser analytics dashboard.
+            </p>
+
+            <div className="project-metrics">
+              <span className="project-metric">3-Role Architecture</span>
+              <span className="project-metric">Hall Booking Pipeline</span>
+              <span className="project-metric">Token-Based Entry</span>
+              <span className="project-metric">AI Feedback Engine</span>
+            </div>
+
+            <div className="project-tags">
+              <span className="project-tag">React</span>
+              <span className="project-tag">Express</span>
+              <span className="project-tag">MongoDB</span>
+              <span className="project-tag">JWT</span>
+              <span className="project-tag-live">{'\u25CF'} Live</span>
+
+              <a
+                className="project-tag-github"
+                href="https://github.com/Addagudi-Sathvik/Event-Management-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <a
+            className="project-arrow"
+            href="https://event-management-system-ivory-ten.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {'\u2197'}
+          </a>
+        </div>
+
+        {/* Project 4 — Smart Canteen (Coming Soon) */}
+        <div className="project-item reveal reveal-delay-3">
+          <img
+            src="/projects/project4.png"
+            className="project-preview"
+            alt="Smart Canteen System"
+          />
+
+          <div className="project-num">04</div>
+
+          <div className="project-info">
+            <div className="project-title">
+              Smart Canteen — College Food Booking System
+            </div>
+
+            <p className="project-desc">
+              A college welfare e-commerce platform where students pre-order meals,
+              choose pickup slots, and pay digitally via Razorpay. Features real-time
+              order tracking, menu management, order history, and a live dashboard
+              for canteen staff to manage fulfilment efficiently.
+            </p>
+
+            <div className="project-metrics">
+              <span className="project-metric">Razorpay Payments</span>
+              <span className="project-metric">Slot Booking</span>
+              <span className="project-metric">Staff Dashboard</span>
+              <span className="project-metric">Order History</span>
+            </div>
+
+            <div className="project-tags">
+              <span className="project-tag">MERN Stack</span>
+              <span className="project-tag">Razorpay</span>
+              <span className="project-tag">Tailwind</span>
+              <span className="project-tag-soon">{'\u25CF'} Coming Soon</span>
+            </div>
+          </div>
+
+          <div className="project-arrow-soon">Soon</div>
+        </div>
+
+      </div>
+    </section>
       
       {/* EDUCATION */}
       <section id="education">
@@ -360,7 +632,7 @@ export default function PortfolioContent() {
           </div>
       
           <div className="edu-item reveal reveal-delay-2">
-            <div className="edu-year">2019</div>
+            <div className="edu-year">Jun 2021 - May 2022</div>
             <div className="edu-dot-col">
               <div className="edu-dot"></div>
             </div>
@@ -503,7 +775,7 @@ export default function PortfolioContent() {
             <div className="ach-content">
               <div className="ach-title">JEE Mains Qualified</div>
               <div className="ach-sub">National Entrance Examination · 2024</div>
-              <p className="ach-desc">Achieved All India Rank 52,616 in JEE Mains among more than 16 lakh candidates nationwide — a rigorous test of Mathematics, Physics, and Chemistry at the national level.</p>
+              <p className="ach-desc">Secured a 96.7 percentile in JEE Mains, placing among the top 3.3% of over 1.6 million candidates nationwide in one of India’s most competitive engineering entrance examinations.</p>
             </div>
             <div className="ach-rank">AIR<br/>52,616</div>
           </div>
@@ -575,13 +847,6 @@ export default function PortfolioContent() {
                 <div>
                   <div className="contact-link-text">LinkedIn</div>
                   <div className="contact-link-sub">linkedin.com/in/addagudi-sathvik</div>
-                </div>
-              </a>
-              <a className="contact-link" href="tel:+919848016444">
-                <div className="contact-link-icon">📞</div>
-                <div>
-                  <div className="contact-link-text">Phone</div>
-                  <div className="contact-link-sub">+91 98480 16444</div>
                 </div>
               </a>
               <a className="contact-link" href="mailto:addagudisathvik@gmail.com">
