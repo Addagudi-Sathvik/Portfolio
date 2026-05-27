@@ -573,6 +573,15 @@ export default function PortfolioContent() {
               <span className="project-tag">Razorpay</span>
               <span className="project-tag">Tailwind</span>
               <span className="project-tag-soon">{'\u25CF'} Coming Soon</span>
+              <a
+                className="project-tag-github"
+                href="https://github.com/Addagudi-Sathvik/Smart-Canteen-Management-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                GitHub
+              </a>
             </div>
           </div>
 
