@@ -60,40 +60,35 @@ export default function PortfolioContent() {
         </ul>
       </nav>
       
-      {/* HERO */}
-      <section id="hero">
-        <canvas id="canvas-bg"></canvas>
-        <div className="hero-content">
-          <p className="hero-tag">I build full-stack apps that solve real problems.</p>
-          <h1 className="hero-name">            
-            Sathvik
-            <span>Addagudi</span>
-          </h1>
-          <p className="hero-role">Full Stack Developer · React · Node.js · MongoDB · Hyderabad</p>
-          <div className="hero-cta">
-            <a className="hero-resume-btn" href="https://drive.google.com/file/d/15G-UcHY6MHkdOVaNvoFh9xi4SiXRtC_a/view?usp=drivesdk" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '15px', height: '15px' }}>
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="12" y1="18" x2="12" y2="12"/>
-                <line x1="9" y1="15" x2="15" y2="15"/>
-              </svg>
-              View Résumé
-            </a>
-            <a className="hero-resume-ghost" href="#contact">Get in Touch</a>
-          </div>
-        </div>
-        <div className="photo-strip">
-          <div className="photo-frame">
-            <img src={photo} alt="Addagudi Sathvik"/>
-          </div>
-          <p className="photo-caption">Sathvik · 2026</p>
-        </div>
-        <div className="hero-scroll-indicator">
-          <span>Scroll</span>
-          <div className="scroll-line"></div>
-        </div>
-      </section>
+{/* HERO SECTION */}
+<section id="hero">
+  <canvas id="canvas-bg"></canvas>
+  <div className="hero-content">
+    <p className="hero-tag">I build full-stack apps that solve real problems.</p>
+    <h1 className="hero-name">            
+      Sathvik
+      <span>Addagudi</span>
+    </h1>
+    <p className="hero-role">Full Stack Developer · React · Node.js · MongoDB · Hyderabad</p>
+    <div className="hero-cta">
+      <a className="hero-resume-btn" href="https://drive.google.com/file/d/15G-UcHY6MHkdOVaNvoFh9xi4SiXRtC_a/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '15px', height: '15px' }}>
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="12" y1="18" x2="12" y2="12"/>
+          <line x1="9" y1="15" x2="15" y2="15"/>
+        </svg>
+        View Résumé
+      </a>
+      <a className="hero-resume-ghost" href="#contact">Get in Touch</a>
+    </div>
+  </div>
+  
+  <div className="hero-scroll-indicator">
+    <span>Scroll</span>
+    <div className="scroll-line"></div>
+  </div>
+</section>
       
       {/* ABOUT */}
       <section id="about">
