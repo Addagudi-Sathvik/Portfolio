@@ -47,7 +47,7 @@ export default function PortfolioContent() {
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a className="nav-resume-btn" href="https://drive.google.com/file/d/15G-UcHY6MHkdOVaNvoFh9xi4SiXRtC_a/view?usp=drivesdk" target="_blank" rel="noopener">
+            <a className="nav-resume-btn" href="https://drive.google.com/file/d/1Qce4Zr_cOSyFCTLASzc-CkZ4xjLyurk8/view?usp=drivesdk" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                 <polyline points="14 2 14 8 20 8"/>
@@ -71,7 +71,7 @@ export default function PortfolioContent() {
     </h1>
     <p className="hero-role">Full Stack Developer · React · Node.js · MongoDB · Hyderabad</p>
     <div className="hero-cta">
-      <a className="hero-resume-btn" href="https://drive.google.com/file/d/15G-UcHY6MHkdOVaNvoFh9xi4SiXRtC_a/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+      <a className="hero-resume-btn" href="https://drive.google.com/file/d/1Qce4Zr_cOSyFCTLASzc-CkZ4xjLyurk8/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '15px', height: '15px' }}>
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
           <polyline points="14 2 14 8 20 8"/>
@@ -539,54 +539,62 @@ export default function PortfolioContent() {
           </a>
         </div>
 
-        {/* Project 4 — Smart Canteen (Coming Soon) */}
         <div className="project-item reveal reveal-delay-3">
-          <img
-            src="/projects/project4.png"
-            className="project-preview"
-            alt="Smart Canteen System"
-          />
+  <img
+    src="/projects/project4.png"
+    className="project-preview"
+    alt="Smart Canteen Management System"
+  />
 
-          <div className="project-num">04</div>
+  <div className="project-num">04</div>
 
-          <div className="project-info">
-            <div className="project-title">
-              Smart Canteen — College Food Booking System
-            </div>
+  <div className="project-info">
+    <div className="project-title">
+      Smart Canteen — College Food Booking System
+    </div>
 
-            <p className="project-desc">
-              A college welfare e-commerce platform where students pre-order meals,
-              choose pickup slots, and pay digitally via Razorpay. Features real-time
-              order tracking, menu management, order history, and a live dashboard
-              for canteen staff to manage fulfilment efficiently.
-            </p>
+    <p className="project-desc">
+      A campus welfare e-commerce and logistics platform designed to flatten peak lunch-hour 
+      crowds through asynchronous micro-slot booking. Students pre-order meals, select dynamic 
+      pickup time slots, and pay securely via Razorpay with server-side HMAC-SHA256 signature 
+      verification. Features real-time state synchronization via WebSockets, persistent live status 
+      tracking, automated stock restoration safeguards, and contactless QR-code counter verification.
+    </p>
 
-            <div className="project-metrics">
-              <span className="project-metric">Razorpay Payments</span>
-              <span className="project-metric">Slot Booking</span>
-              <span className="project-metric">Staff Dashboard</span>
-              <span className="project-metric">Order History</span>
-            </div>
+    <div className="project-metrics">
+      <span className="project-metric">Razorpay Payments</span>
+      <span className="project-metric">Pickup Time Slot</span>
+      <span className="project-metric">QR Code Pickup</span>
+      <span className="project-metric">Google OAuth</span>
+    </div>
 
-            <div className="project-tags">
-              <span className="project-tag">MERN Stack</span>
-              <span className="project-tag">Razorpay</span>
-              <span className="project-tag">Tailwind</span>
-              <span className="project-tag-soon">{'\u25CF'} Coming Soon</span>
-              <a
-                className="project-tag-github"
-                href="https://github.com/Addagudi-Sathvik/Smart-Canteen-Management-System"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
+    <div className="project-tags">
+      <span className="project-tag">MERN Stack</span>
+      <span className="project-tag">Razorpay</span>
+      <span className="project-tag">Tailwind</span>
+      <span className="project-tag-live">{'\u25CF'} Coming Soon</span>
 
-          <div className="project-arrow-soon">Soon</div>
-        </div>
+      <a
+        className="project-tag-github"
+        href="https://github.com/Addagudi-Sathvik/Smart-Canteen-Management-System"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+      >
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <button
+    className="project-arrow"
+    disabled
+    style={{ cursor: 'not-allowed', opacity: 0.5 }}
+    onClick={(e) => e.stopPropagation()}
+  >
+    {'\u2197'}
+  </button>
+</div>
 
       </div>
     </section>
@@ -996,7 +1004,7 @@ export default function PortfolioContent() {
       </footer>
       
       {/* FLOATING RESUME FAB */}
-      <a className="resume-fab" href="https://drive.google.com/file/d/15G-UcHY6MHkdOVaNvoFh9xi4SiXRtC_a/view?usp=drivesdk" target="_blank" rel="noopener" title="View Résumé">
+      <a className="resume-fab" href="https://drive.google.com/file/d/1Qce4Zr_cOSyFCTLASzc-CkZ4xjLyurk8/view?usp=drivesdk" target="_blank" rel="noopener" title="View Résumé">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
           <polyline points="14 2 14 8 20 8"/>
