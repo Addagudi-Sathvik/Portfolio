@@ -354,250 +354,253 @@ export default function PortfolioContent() {
         </div>
       </section>
       
-     {/* PROJECTS */}
-    <section id="projects">
-      <div className="section-header reveal">
-        <span className="section-num">03</span>
-        <div className="section-line"></div>
-        <h2 className="section-title">Projects</h2>
-      </div>
-
-      <div className="projects-list">
-
-        {/* Project 1 — Civic Issue Reporting System */}
-        <div className="project-item reveal">
-          <img
-            src="/projects/project1.png"
-            className="project-preview"
-            alt="Civic Issue Reporting System"
-          />
-          <div className="project-num">01</div>
-
-          <div className="project-info">
-            <div className="project-title">Civic Issue Reporting System</div>
-
-            <p className="project-desc">
-              A multi-role civic platform with a complete issue lifecycle — citizen
-              reporting, admin verification, department assignment, and proof-based
-              resolution. Features GPS-pinned reports, role-based dashboards, and a
-              gamified points system where users earn rewards per verified report and
-              redeem them for coupons.
-            </p>
-
-            <div className="project-metrics">
-              <span className="project-metric">3-Role System</span>
-              <span className="project-metric">GPS Reporting</span>
-              <span className="project-metric">Gamified Rewards</span>
-              <span className="project-metric">Proof-Verified Pipeline</span>
-            </div>
-
-            <div className="project-tags">
-              <span className="project-tag">React</span>
-              <span className="project-tag">Node.js</span>
-              <span className="project-tag">MongoDB</span>
-              <span className="project-tag">JWT</span>
-              <span className="project-tag-live">{'\u25CF'} Live</span>
-
-              <a
-                className="project-tag-github"
-                href="https://github.com/Addagudi-Sathvik/Civic-Issue-Reporting-System"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-
-          <a
-            className="project-arrow"
-            href="https://civic-issue-reporting-system-six.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {'\u2197'}
-          </a>
+      {/* PROJECTS */}
+      <section id="projects">
+        <div className="section-header reveal">
+          <span className="section-num">03</span>
+          <div className="section-line"></div>
+          <h2 className="section-title">Projects</h2>
         </div>
 
-        {/* Project 2 — KhataTrack */}
-        <div className="project-item reveal reveal-delay-1">
-          <img
-            src="/projects/project2.png"
-            className="project-preview"
-            alt="KhataTrack"
-          />
+        <div className="projects-list">
 
-          <div className="project-num">02</div>
+          {/* Project 1 — Civic Issue Reporting System */}
+          <div className="project-item reveal">
+            <img
+              src="/projects/project1.png"
+              className="project-preview"
+              alt="Civic Issue Reporting System"
+            />
+            <div className="project-num">01</div>
 
-          <div className="project-info">
-            <div className="project-title">KhataTrack</div>
+            <div className="project-info">
+              <div className="project-title">Civic Issue Reporting System</div>
 
-            <p className="project-desc">
-              A personal finance intelligence platform with multi-format expense
-              exports (Excel and PDF), interactive monthly and yearly dashboards,
-              and a real-time income-to-expense ratio engine. Users set savings goals
-              with smart notifications triggered on target deviation — giving full
-              visibility into spending patterns with actionable analytics.
-            </p>
+              <p className="project-desc">
+                A multi-role civic platform with a complete issue lifecycle — citizen
+                reporting, admin verification, department assignment, and proof-based
+                resolution. Features GPS-pinned reports, role-based dashboards, and a
+                gamified points system where users earn rewards per verified report and
+                redeem them for coupons.
+              </p>
 
-            <div className="project-metrics">
-              <span className="project-metric">Excel / PDF Exports</span>
-              <span className="project-metric">Monthly & Yearly Analytics</span>
-              <span className="project-metric">Goal Notifications</span>
-              <span className="project-metric">Income-Expense Ratio</span>
+              <div className="project-metrics">
+                <span className="project-metric">3-Role System</span>
+                <span className="project-metric">GPS Reporting</span>
+                <span className="project-metric">Gamified Rewards</span>
+                <span className="project-metric">Proof-Verified Pipeline</span>
+              </div>
+
+              <div className="project-tags">
+                <span className="project-tag">React</span>
+                <span className="project-tag">Node.js</span>
+                <span className="project-tag">MongoDB</span>
+                <span className="project-tag">JWT</span>
+                <span className="project-tag-live">{'\u25CF'} Live</span>
+
+                <a
+                  className="project-tag-github"
+                  href="https://github.com/Addagudi-Sathvik/Civic-Issue-Reporting-System"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  GitHub
+                </a>
+              </div>
             </div>
 
-            <div className="project-tags">
-              <span className="project-tag">React</span>
-              <span className="project-tag">Chart.js</span>
-              <span className="project-tag">MongoDB</span>
-              <span className="project-tag">JWT</span>
-              <span className="project-tag-live">{'\u25CF'} Live</span>
-
-              <a
-                className="project-tag-github"
-                href="https://github.com/Addagudi-Sathvik/KhataTrack"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-              >
-                GitHub
-              </a>
-            </div>
+            <a
+              className="project-arrow"
+              href="https://civic-issue-reporting-system-six.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {'\u2197'}
+            </a>
           </div>
 
-          <a
-            className="project-arrow"
-            href="https://khatatrack.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {'\u2197'}
-          </a>
-        </div>
+          {/* Project 2 — KhataTrack */}
+          <div className="project-item reveal reveal-delay-1">
+            <img
+              src="/projects/project2.png"
+              className="project-preview"
+              alt="KhataTrack"
+            />
 
-        {/* Project 3 — Event Management System */}
-        <div className="project-item reveal reveal-delay-2">
-          <img
-            src="/projects/project3.png"
-            className="project-preview"
-            alt="Event Management System"
-          />
+            <div className="project-num">02</div>
 
-          <div className="project-num">03</div>
+            <div className="project-info">
+              <div className="project-title">KhataTrack</div>
 
-          <div className="project-info">
-            <div className="project-title">
-              EventFlow — Event Management System
+              <p className="project-desc">
+                A personal finance intelligence platform with multi-format expense
+                exports (Excel and PDF), interactive monthly and yearly dashboards,
+                and a real-time income-to-expense ratio engine. Users set savings goals
+                with smart notifications triggered on target deviation — giving full
+                visibility into spending patterns with actionable analytics.
+              </p>
+
+              <div className="project-metrics">
+                <span className="project-metric">Excel / PDF Exports</span>
+                <span className="project-metric">Monthly & Yearly Analytics</span>
+                <span className="project-metric">Goal Notifications</span>
+                <span className="project-metric">Income-Expense Ratio</span>
+              </div>
+
+              <div className="project-tags">
+                <span className="project-tag">React</span>
+                <span className="project-tag">Chart.js</span>
+                <span className="project-tag">MongoDB</span>
+                <span className="project-tag">JWT</span>
+                <span className="project-tag-live">{'\u25CF'} Live</span>
+
+                <a
+                  className="project-tag-github"
+                  href="https://github.com/Addagudi-Sathvik/KhataTrack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  GitHub
+                </a>
+              </div>
             </div>
 
-            <p className="project-desc">
-              A 3-panel event ecosystem (Organiser, Admin, User) with a complete
-              hall booking and approval pipeline. Organisers browse and request halls
-              by time slot, admins verify credentials before approval, and users book
-              events with a generated token for dual verification at entry. Includes
-              an AI-powered smart feedback engine and a full organiser analytics dashboard.
-            </p>
-
-            <div className="project-metrics">
-              <span className="project-metric">3-Role Architecture</span>
-              <span className="project-metric">Hall Booking Pipeline</span>
-              <span className="project-metric">Token-Based Entry</span>
-              <span className="project-metric">AI Feedback Engine</span>
-            </div>
-
-            <div className="project-tags">
-              <span className="project-tag">React</span>
-              <span className="project-tag">Express</span>
-              <span className="project-tag">MongoDB</span>
-              <span className="project-tag">JWT</span>
-              <span className="project-tag-live">{'\u25CF'} Live</span>
-
-              <a
-                className="project-tag-github"
-                href="https://github.com/Addagudi-Sathvik/Event-Management-System"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-              >
-                GitHub
-              </a>
-            </div>
+            <a
+              className="project-arrow"
+              href="https://khatatrack.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {'\u2197'}
+            </a>
           </div>
 
-          <a
-            className="project-arrow"
-            href="https://event-management-system-ivory-ten.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {'\u2197'}
-          </a>
+          {/* Project 3 — Event Management System */}
+          <div className="project-item reveal reveal-delay-2">
+            <img
+              src="/projects/project3.png"
+              className="project-preview"
+              alt="Event Management System"
+            />
+
+            <div className="project-num">03</div>
+
+            <div className="project-info">
+              <div className="project-title">
+                EventFlow — Event Management System
+              </div>
+
+              <p className="project-desc">
+                A 3-panel event ecosystem (Organiser, Admin, User) with a complete
+                hall booking and approval pipeline. Organisers browse and request halls
+                by time slot, admins verify credentials before approval, and users book
+                events with a generated token for dual verification at entry. Includes
+                an AI-powered smart feedback engine and a full organiser analytics dashboard.
+              </p>
+
+              <div className="project-metrics">
+                <span className="project-metric">3-Role Architecture</span>
+                <span className="project-metric">Hall Booking Pipeline</span>
+                <span className="project-metric">Token-Based Entry</span>
+                <span className="project-metric">AI Feedback Engine</span>
+              </div>
+
+              <div className="project-tags">
+                <span className="project-tag">React</span>
+                <span className="project-tag">Express</span>
+                <span className="project-tag">MongoDB</span>
+                <span className="project-tag">JWT</span>
+                <span className="project-tag-live">{'\u25CF'} Live</span>
+
+                <a
+                  className="project-tag-github"
+                  href="https://github.com/Addagudi-Sathvik/Event-Management-System"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <a
+              className="project-arrow"
+              href="https://event-management-system-ivory-ten.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {'\u2197'}
+            </a>
+          </div>
+
+          {/* Project 4 — Smart Canteen Management System */}
+          <div className="project-item reveal reveal-delay-3">
+            <img
+              src="/projects/project4.png"
+              className="project-preview"
+              alt="Smart Canteen Management System"
+            />
+
+            <div className="project-num">04</div>
+
+            <div className="project-info">
+              <div className="project-title">
+                Smart Canteen — College Food Booking System
+              </div>
+
+              <p className="project-desc">
+                A campus welfare e-commerce and logistics platform designed to flatten peak lunch-hour 
+                crowds through asynchronous micro-slot booking. Students pre-order meals, select dynamic 
+                pickup time slots, and pay securely via Razorpay with server-side HMAC-SHA256 signature 
+                verification. Features real-time state synchronization via WebSockets, persistent live status 
+                tracking, automated stock restoration safeguards, and contactless QR-code counter verification.
+              </p>
+
+              <div className="project-metrics">
+                <span className="project-metric">Razorpay Payments</span>
+                <span className="project-metric">Pickup Time Slot</span>
+                <span className="project-metric">QR Code Pickup</span>
+                <span className="project-metric">Google OAuth</span>
+              </div>
+
+              <div className="project-tags">
+                <span className="project-tag">MERN Stack</span>
+                <span className="project-tag">Razorpay</span>
+                <span className="project-tag">Tailwind</span>
+                <span className="project-tag-live">{'\u25CF'} Live</span> {/* ✅ Updated from "Coming Soon" to "Live" */}
+
+                <a
+                  className="project-tag-github"
+                  href="https://github.com/Addagudi-Sathvik/Smart-Canteen-Management-System"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            {/* ✅ Changed button to functional anchor tag with your Vercel link */}
+            <a
+              className="project-arrow"
+              href="https://smart-canteen-management-system-two.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {'\u2197'}
+            </a>
+          </div>
+
         </div>
-
-        <div className="project-item reveal reveal-delay-3">
-  <img
-    src="/projects/project4.png"
-    className="project-preview"
-    alt="Smart Canteen Management System"
-  />
-
-  <div className="project-num">04</div>
-
-  <div className="project-info">
-    <div className="project-title">
-      Smart Canteen — College Food Booking System
-    </div>
-
-    <p className="project-desc">
-      A campus welfare e-commerce and logistics platform designed to flatten peak lunch-hour 
-      crowds through asynchronous micro-slot booking. Students pre-order meals, select dynamic 
-      pickup time slots, and pay securely via Razorpay with server-side HMAC-SHA256 signature 
-      verification. Features real-time state synchronization via WebSockets, persistent live status 
-      tracking, automated stock restoration safeguards, and contactless QR-code counter verification.
-    </p>
-
-    <div className="project-metrics">
-      <span className="project-metric">Razorpay Payments</span>
-      <span className="project-metric">Pickup Time Slot</span>
-      <span className="project-metric">QR Code Pickup</span>
-      <span className="project-metric">Google OAuth</span>
-    </div>
-
-    <div className="project-tags">
-      <span className="project-tag">MERN Stack</span>
-      <span className="project-tag">Razorpay</span>
-      <span className="project-tag">Tailwind</span>
-      <span className="project-tag-live">{'\u25CF'} Coming Soon</span>
-
-      <a
-        className="project-tag-github"
-        href="https://github.com/Addagudi-Sathvik/Smart-Canteen-Management-System"
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={(e) => e.stopPropagation()}
-      >
-        GitHub
-      </a>
-    </div>
-  </div>
-
-  <button
-    className="project-arrow"
-    disabled
-    style={{ cursor: 'not-allowed', opacity: 0.5 }}
-    onClick={(e) => e.stopPropagation()}
-  >
-    {'\u2197'}
-  </button>
-</div>
-
-      </div>
-    </section>
+      </section>
       
       {/* EDUCATION */}
       <section id="education">
