@@ -826,6 +826,15 @@ export default function PortfolioContent() {
             <div className="cert-badge cert-badge--link">↗ View Certificate</div>
           </a>
 
+          {/* New Card — MS Excel */}
+          <a className="cert-card reveal reveal-delay-3" href="https://drive.google.com/file/d/1xOIy5SQFrtpjqbcX5y4QKf5ZWk_sGTyV/view?usp=drivesdk" target="_blank" rel="noopener">
+            <div className="cert-logo">📊</div>
+            <div className="cert-issuer">Simplilearn · SkillUp</div>
+            <div className="cert-name">Introduction to MS Excel</div>
+            <div className="cert-date">May 2026 · Microsoft Partner</div>
+            <div className="cert-badge cert-badge--link">↗ View Certificate</div>
+          </a>
+
         </div>
       </section>
 
