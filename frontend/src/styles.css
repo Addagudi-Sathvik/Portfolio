@@ -834,3 +834,29 @@ a.project-item:hover .project-arrow {
   min-width: 2.2rem;
   text-align: right;
 }
+/* Custom styling for Document links matching your existing project system layout */
+.project-tag-doc {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.40rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  
+  /* Inherits your portfolio layout design aesthetics */
+  background: rgba(0, 196, 140, 0.08); 
+  color: #00C48C;
+  border: 1px solid rgba(0, 196, 140, 0.25);
+}
+
+.project-tag-doc:hover {
+  background: #00C48C;
+  color: #ffffff;
+  border-color: #00C48C;
+  box-shadow: 0 4px 12px rgba(0, 196, 140, 0.2);
+  transform: translateY(-1px);
+}

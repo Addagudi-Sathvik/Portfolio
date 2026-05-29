@@ -365,7 +365,12 @@ export default function PortfolioContent() {
         <div className="projects-list">
 
           {/* Project 1 — Civic Issue Reporting System */}
-          <div className="project-item reveal">
+          <a 
+            href="https://civic-issue-reporting-system-six.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-item reveal"
+          >
             <img
               src="/projects/project1.png"
               className="project-preview"
@@ -407,22 +412,31 @@ export default function PortfolioContent() {
                 >
                   GitHub
                 </a>
+
+                <a
+                  className="project-tag-doc"
+                  href="https://drive.google.com/file/d/1SgOX6GBgaK1NYLKJrvM-xpICJjdl9FxG/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Document
+                </a>
               </div>
             </div>
 
-            <a
-              className="project-arrow"
-              href="https://civic-issue-reporting-system-six.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className="project-arrow">
               {'\u2197'}
-            </a>
-          </div>
+            </div>
+          </a>
 
           {/* Project 2 — KhataTrack */}
-          <div className="project-item reveal reveal-delay-1">
+          <a 
+            href="https://khatatrack.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-item reveal reveal-delay-1"
+          >
             <img
               src="/projects/project2.png"
               className="project-preview"
@@ -465,22 +479,31 @@ export default function PortfolioContent() {
                 >
                   GitHub
                 </a>
+
+                <a
+                  className="project-tag-doc"
+                  href="https://drive.google.com/file/d/1EnEZYlGB2E-WaMBXFlSri74ByJtE0gKP/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Document
+                </a>
               </div>
             </div>
 
-            <a
-              className="project-arrow"
-              href="https://khatatrack.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className="project-arrow">
               {'\u2197'}
-            </a>
-          </div>
+            </div>
+          </a>
 
-          {/* Project 3 — Event Management System */}
-          <div className="project-item reveal reveal-delay-2">
+          {/* Project 3 — EventFlow */}
+          <a 
+            href="https://event-management-system-ivory-ten.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-item reveal reveal-delay-2"
+          >
             <img
               src="/projects/project3.png"
               className="project-preview"
@@ -525,22 +548,31 @@ export default function PortfolioContent() {
                 >
                   GitHub
                 </a>
+
+                <a
+                  className="project-tag-doc"
+                  href="https://drive.google.com/file/d/1k8C-Kexa-YfKjKweHgFUbYCVP26vbHyY/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Document
+                </a>
               </div>
             </div>
 
-            <a
-              className="project-arrow"
-              href="https://event-management-system-ivory-ten.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className="project-arrow">
               {'\u2197'}
-            </a>
-          </div>
+            </div>
+          </a>
 
           {/* Project 4 — Smart Canteen Management System */}
-          <div className="project-item reveal reveal-delay-3">
+          <a 
+            href="https://smart-canteen-management-system-two.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-item reveal reveal-delay-3"
+          >
             <img
               src="/projects/project4.png"
               className="project-preview"
@@ -573,7 +605,7 @@ export default function PortfolioContent() {
                 <span className="project-tag">MERN Stack</span>
                 <span className="project-tag">Razorpay</span>
                 <span className="project-tag">Tailwind</span>
-                <span className="project-tag-live">{'\u25CF'} Live</span> {/* ✅ Updated from "Coming Soon" to "Live" */}
+                <span className="project-tag-live">{'\u25CF'} Live</span>
 
                 <a
                   className="project-tag-github"
@@ -584,20 +616,23 @@ export default function PortfolioContent() {
                 >
                   GitHub
                 </a>
+
+                <a
+                  className="project-tag-doc"
+                  href="https://drive.google.com/file/d/1yBgJSzLN9iQcbzpN-QoCh8HE4bzuSEF-/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Document
+                </a>
               </div>
             </div>
 
-            {/* ✅ Changed button to functional anchor tag with your Vercel link */}
-            <a
-              className="project-arrow"
-              href="https://smart-canteen-management-system-two.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className="project-arrow">
               {'\u2197'}
-            </a>
-          </div>
+            </div>
+          </a>
 
         </div>
       </section>
@@ -732,7 +767,7 @@ export default function PortfolioContent() {
           <h2 className="section-title">Certificates</h2>
         </div>
         <div className="cert-grid">
-      
+
           <a className="cert-card reveal" href="https://drive.google.com/file/d/14OHq50tj7lZpb3MMxOtDJdn4DQe-t3U8/view?usp=drivesdk" target="_blank" rel="noopener">
             <div className="cert-logo">🎓</div>
             <div className="cert-issuer">Udemy</div>
@@ -740,7 +775,7 @@ export default function PortfolioContent() {
             <div className="cert-date">Sep 2025 – Oct 2025 · Udemy</div>
             <div className="cert-badge cert-badge--link">↗ View Certificate</div>
           </a>
-      
+
           <a className="cert-card reveal reveal-delay-1" href="https://drive.google.com/file/d/1BEUpfPdTKzNfyQiuas7Ss3g6EWG5jQvb/view?usp=drivesdk" target="_blank" rel="noopener">
             <div className="cert-logo">🤖</div>
             <div className="cert-issuer">NPTEL</div>
@@ -748,7 +783,7 @@ export default function PortfolioContent() {
             <div className="cert-date">Jul 2025 – Oct 2025 · NPTEL</div>
             <div className="cert-badge cert-badge--link">↗ View Certificate</div>
           </a>
-      
+
           <a className="cert-card reveal reveal-delay-2" href="https://drive.google.com/file/d/12JV2lvEQ8Bev7g4I7fA6DiqHy9fTriQe/view?usp=drivesdk" target="_blank" rel="noopener">
             <div className="cert-logo">☁️</div>
             <div className="cert-issuer">Oracle</div>
@@ -756,7 +791,7 @@ export default function PortfolioContent() {
             <div className="cert-date">Oracle University</div>
             <div className="cert-badge cert-badge--link">↗ View Certificate</div>
           </a>
-      
+
           <a className="cert-card reveal reveal-delay-3" href="https://drive.google.com/file/d/1CPBu0Yu6jXI5nrdUp_C5mZsKiS6Bc1I_/view?usp=drivesdk" target="_blank" rel="noopener">
             <div className="cert-logo">🍃</div>
             <div className="cert-issuer">MongoDB University</div>
@@ -764,7 +799,7 @@ export default function PortfolioContent() {
             <div className="cert-date">MongoDB University</div>
             <div className="cert-badge cert-badge--link">↗ View Certificate</div>
           </a>
-      
+
           <a className="cert-card reveal" href="https://drive.google.com/file/d/1jcbpBTYUr7jc5H4liMaF4cJl75bkk1Qo/view?usp=drivesdk" target="_blank" rel="noopener">
             <div className="cert-logo">🐍</div>
             <div className="cert-issuer">Python Institute</div>
@@ -772,10 +807,28 @@ export default function PortfolioContent() {
             <div className="cert-date">Python Institute / PCEP</div>
             <div className="cert-badge cert-badge--link">↗ View Certificate</div>
           </a>
-      
+
+          {/* New Card — Anthropic */}
+          <a className="cert-card reveal reveal-delay-1" href="https://drive.google.com/file/d/1z3fBxrtTXiZR9dkbLBg0MkrS74pLd-Kd/view?usp=drivesdk" target="_blank" rel="noopener">
+            <div className="cert-logo">🔮</div>
+            <div className="cert-issuer">Anthropic</div>
+            <div className="cert-name">Claude &amp; Anthropic API Professional Foundations</div>
+            <div className="cert-date">Anthropic Credential Pipeline</div>
+            <div className="cert-badge cert-badge--link">↗ View Certificate</div>
+          </a>
+
+          {/* New Card — Databricks */}
+          <a className="cert-card reveal reveal-delay-2" href="https://drive.google.com/file/d/1KGyimljOUjTmmPrtDELQv2xBftovGnF6/view?usp=drivesdk" target="_blank" rel="noopener">
+            <div className="cert-logo">🧱</div>
+            <div className="cert-issuer">Databricks</div>
+            <div className="cert-name">Databricks Lakehouse Fundamentals Certification</div>
+            <div className="cert-date">Databricks Academy</div>
+            <div className="cert-badge cert-badge--link">↗ View Certificate</div>
+          </a>
+
         </div>
       </section>
-      
+
       {/* ACHIEVEMENTS */}
       <section id="achievements">
         <div className="section-header reveal">
@@ -784,7 +837,7 @@ export default function PortfolioContent() {
           <h2 className="section-title">Achievements</h2>
         </div>
         <div className="ach-list">
-      
+
           <div className="ach-item reveal">
             <div className="ach-icon">🏆</div>
             <div className="ach-content">
@@ -794,7 +847,7 @@ export default function PortfolioContent() {
             </div>
             <div className="ach-rank">AIR<br/>52,616</div>
           </div>
-      
+
           <div className="ach-item reveal reveal-delay-1">
             <div className="ach-icon">⭐</div>
             <div className="ach-content">
@@ -804,7 +857,7 @@ export default function PortfolioContent() {
             </div>
             <div className="ach-rank">Elite+<br/>Silver</div>
           </div>
-      
+
           <div className="ach-item reveal reveal-delay-2">
             <div className="ach-icon">📈</div>
             <div className="ach-content">
@@ -814,7 +867,7 @@ export default function PortfolioContent() {
             </div>
             <div className="ach-rank">9.21<br/>/10</div>
           </div>
-      
+
           <div className="ach-item reveal reveal-delay-3">
             <div className="ach-icon">🏏</div>
             <div className="ach-content">
@@ -824,7 +877,7 @@ export default function PortfolioContent() {
             </div>
             <div className="ach-rank">🥇<br/>Winners</div>
           </div>
-      
+
           <div className="ach-item reveal">
             <div className="ach-icon">💡</div>
             <div className="ach-content">
@@ -834,7 +887,7 @@ export default function PortfolioContent() {
             </div>
             <div className="ach-rank">OSS</div>
           </div>
-      
+
         </div>
       </section>
       
